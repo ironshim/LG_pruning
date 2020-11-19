@@ -1,21 +1,11 @@
-# [Learning both Weights and Connections for Efficient Neural Networks](https://arxiv.org/abs/1506.02626)
+# [Comparing Rewinding and Fine-tuning in Neural Network Pruning](https://arxiv.org/abs/2003.02389)
 
-A PyTorch implementation of [this paper](https://arxiv.org/abs/1506.02626).
+modified from https://github.com/jack-willturner/DeepCompression-PyTorch
 
-I'm currently in the process of updating this to work with the latest version of PyTorch! Currently the only network type that works is ResNet - other networks coming soon. 
+to create the pretrained model, run: 
 
-To run, try:
 ```bash
 python train.py --model='resnet34' --checkpoint='resnet34'
 python prune.py --model='resnet34' --checkpoint='resnet34'
 ```
 
-## Summary
-
-Given a family of ResNets, we can construct a Pareto frontier of the tradeoff between accuracy and number of parameters:
-
-![alt text](./resources/resnets.png)
-
-Han et al. posit that we can beat this Pareto frontier by leaving network structures fixed, but removing individual parameters:
-
-![alt text](./resources/pareto.png)
