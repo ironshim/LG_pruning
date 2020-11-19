@@ -6,6 +6,6 @@ to create the pretrained model, run:
 
 ```bash
 python train.py --model='resnet34' --checkpoint='resnet34'
-python prune.py --model='resnet34' --checkpoint='resnet34'
+
 ```
 
